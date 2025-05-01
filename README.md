@@ -22,7 +22,7 @@ IoT Guardian is a comprehensive network monitoring and security application desi
 - macOS/Linux (Windows support experimental)  
 - Root privileges for full functionality  
 
-### Installation  
+### 💻 Installation  
 ```bash  
 # Clone repository  
 git clone https://github.com/yourusername/iot-guardian.git  
@@ -32,10 +32,10 @@ cd iot-guardian
 python -m venv venv  
 source venv/bin/activate  # Linux/MacOS  
 venv\Scripts\activate     # Windows  
+```
 
-💻 Installation
-Requirements
-bash
+### Requirements
+```bash  
 # Core dependencies
 python>=3.8
 flet>=0.9.0
@@ -55,3 +55,4 @@ python -m pip install -r requirements.txt
 
 # Initialize database
 python -c "from database import init_db; init_db()"
+```
