@@ -39,3 +39,12 @@ pip install -r requirements.txt
 # Install system components  
 brew install tshark dnctl  # MacOS  
 apt install tshark         # Debian/Ubuntu
+
+# Pull latest changes
+git pull origin main
+
+# Reinstall dependencies
+pip install -r requirements.txt --upgrade
+
+# Rebuild database schema (if needed)
+python -c "from database import init_db; init_db()"
