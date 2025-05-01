@@ -1,7 +1,8 @@
-# IoT Guardian - Advanced Network Monitoring & Security Suite  
+# IoT Guardian
 
-![IoT Guardian Logo](https://via.placeholder.com/150x50?text=IoT+Guardian)  
-*Comprehensive protection for your smart devices and network*  
+## Overview
+
+IoT Guardian is a comprehensive network monitoring and security application designed specifically for IoT environments. It provides real-time device monitoring, intrusion prevention, firewall management, and packet capture capabilities to help secure your IoT network.
 
 ## 🌟 Key Features  
 
@@ -37,4 +38,4 @@ pip install -r requirements.txt
 
 # Install system components  
 brew install tshark dnctl  # MacOS  
-apt install tshark         # Debian/Ubuntu  
+apt install tshark         # Debian/Ubuntu
