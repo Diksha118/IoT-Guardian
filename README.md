@@ -15,6 +15,14 @@ IoT Guardian is a comprehensive network monitoring and security application desi
 | **🛰 Packet Inspector** | Advanced traffic capture and analysis with TShark integration |  
 | **📈 Database Explorer** | Direct access to all collected network data |  
 
+## 🔄 Architecture
+
+![alt text](http://url/to/img.png)
+
+## 💻 Environment Setup
+
+![alt text](http://url/to/img.png)
+
 ## 🚀 Getting Started  
 
 ### Prerequisites  
@@ -42,17 +50,43 @@ flet>=0.9.0
 tshark>=3.6.0
 sqlite3>=3.35.0
 
-# On Debian/Ubuntu
-sudo apt install tshark sqlite3
-
 # On macOS
 brew install wireshark
-Setup
-bash
+```
+
+### Setup
+```bash 
 git clone https://github.com/yourrepo/iot-guardian.git
 cd iot-guardian
-python -m pip install -r requirements.txt
 
 # Initialize database
 python -c "from database import init_db; init_db()"
 ```
+
+### Firewall Rules Example
+```json
+{
+  "rules": [
+    {
+      "type": "ip",
+      "target": "192.168.1.100",
+      "protocol": "tcp",
+      "action": "DROP"
+    }
+  ]
+}
+```
+### 🖥 Usage
+Starting the Application
+```bash
+# Normal mode
+python main.py
+
+# Debug mode
+python main.py --debug --log-level INFO
+
+# Specific interface
+python main.py --interface en0
+```
+
+
