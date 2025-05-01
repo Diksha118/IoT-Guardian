@@ -33,18 +33,25 @@ python -m venv venv
 source venv/bin/activate  # Linux/MacOS  
 venv\Scripts\activate     # Windows  
 
-# Install dependencies  
-pip install -r requirements.txt  
+💻 Installation
+Requirements
+bash
+# Core dependencies
+python>=3.8
+flet>=0.9.0
+tshark>=3.6.0
+sqlite3>=3.35.0
 
-# Install system components  
-brew install tshark dnctl  # MacOS  
-apt install tshark         # Debian/Ubuntu
+# On Debian/Ubuntu
+sudo apt install tshark sqlite3
 
-# Pull latest changes
-git pull origin main
+# On macOS
+brew install wireshark
+Setup
+bash
+git clone https://github.com/yourrepo/iot-guardian.git
+cd iot-guardian
+python -m pip install -r requirements.txt
 
-# Reinstall dependencies
-pip install -r requirements.txt --upgrade
-
-# Rebuild database schema (if needed)
+# Initialize database
 python -c "from database import init_db; init_db()"
