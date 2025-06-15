@@ -17,7 +17,7 @@ IoT Guardian is a comprehensive network monitoring and security application desi
 
 ## 🔄 Architecture
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Diksha118/IoT-Guardian/blob/main/images/Architechture_IOT.png)
 
 ## 💻 Environment Setup
 
